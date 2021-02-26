@@ -8,12 +8,12 @@ function update_scene(context) {
     if(context.title) {
         $('#title').text(context.title);
     } else {
-        $('#title').text('Tirinha sem nome (Clique para editar)');
+        $('#title').text('Un-named Comic (Click to edit)');
     }
     if(context.author) {
         $('#author').text(context.author);
     } else {
-        $('#author').text('Anônima (Clique para editar)');
+        $('#author').text('Anonymous (Click to edit)');
     }
     // Set the backgrounds.
     if(context.bg1) {
@@ -337,7 +337,7 @@ function setup_editor() {
                 pane_code.show();
                 var code_holder = pane.find('.source_code');
                 if(!code_holder.text()) {
-                    code_holder.text('from microbit import *\n\n# Edite o seu código aqui!\n\ndisplay.scroll("Hello, World!")');
+                    code_holder.text('from microbit import *\n\n# Edit your code here!\n\ndisplay.scroll("Hello, World!")');
                 }
             } else {
                 pane_background.show();
@@ -378,7 +378,7 @@ function setup_editor() {
             if(this.checked) {
                 holder.show();
                 if(!text_p.text()) {
-                    text_p.text('Edite isto..!');
+                    text_p.text('Edit this..!');
                 }
             } else {
                 holder.hide();
@@ -390,7 +390,7 @@ function setup_editor() {
             if(this.checked) {
                 holder.show();
                 if(!text_p.text()) {
-                    text_p.text('Edite isto..!');
+                    text_p.text('Edit this..!');
                 }
             } else {
                 holder.hide();
@@ -402,7 +402,7 @@ function setup_editor() {
             if(this.checked) {
                 holder.show();
                 if(!text_p.text()) {
-                    text_p.text('Edite isto..!');
+                    text_p.text('Edit this..!');
                 }
             } else {
                 holder.hide();
@@ -414,7 +414,7 @@ function setup_editor() {
             if(this.checked) {
                 holder.show();
                 if(!text_p.text()) {
-                    text_p.text('Edite isto..!');
+                    text_p.text('Edit this..!');
                 }
             } else {
                 holder.hide();
