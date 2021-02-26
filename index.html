@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Python Comic</title>
+        <title>Python em tirinhas (Python Comic)</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="introjs.min.css"/>
         <script src="jquery-2.1.4.min.js"></script>
@@ -12,8 +12,8 @@
     <body>
     <main class="comic">
         <header class="title">
-            <h1 id="title" data-step="1" data-intro="Clique no título para editar.">Python Comic</h1>
-            <h2 id="author" data-step="2" data-intro="O mesmo para o nome da autora!">Autora anÔnima</h2>
+            <h1 id="title" data-step="1" data-intro="Clique no título para editar.">Python em tirinhas</h1>
+            <h2 id="author" data-step="2" data-intro="O mesmo para o nome da autora!">Autora anônima</h2>
             <span id="editor-help"><button onclick="javascript:introJs().start();">Help</button><button id="direct-button" data-step="9"
             data-intro="No final, clique aqui para pegar a URL da sua tirinha. Compartilhe!">Pegar link direto</button> <a href="#" id="direct-link"></a></span>
             <span id="twitter-button"></span>
@@ -21,7 +21,7 @@
         </header>
 
         <article class="strip">
-            <div class="frame" id="frame1" data-step="3" data-intro="Each comic frame is controlled by the form underneath it." data-position="right">
+            <div class="frame" id="frame1" data-step="3" data-intro="Cada quadrinho é controlado pelo formulário abaixo dele." data-position="right">
                 <section id="pane1" class="">
                     <header id="header1" class="textual header"></header>
                     <img id="bg1" src="" class="bg_image"/>
@@ -43,20 +43,20 @@
                 </section>
                 <form id="form1">
                     <p data-step="4"
-                    data-intro="Toggle a frame header, then click it to edit."
+                    data-intro="Ligue um texto de cabeçalho, e clique nele para editar."
                     data-position="top">
                     <label for="form-heading">Cabeçalho:</label>
                     <input id="form-heading" type="checkbox"/></p>
                     <p><label for="form-background">Fundo:</label>
-                    <select id="form-background" data-step="5"
+                        <select id="form-background" data-step="5"
                     data-intro="Select a pre-defined background. Alternatively, choose to use a custom image (select 'Image'), embed a micro:bit simulator (select 'Micro:bit' and click the micro:bit-omatic link to generate a URL) or even add example code (select 'Example Code' then click the frame to edit your code)."
                     data-position="top">
-                        <option value="none">Nenhuma</option>
+                        <option value="none">Nenhum</option>
                         <optgroup label="Custom Backgrounds">
-                        <option value="random">Sorteado</option>
-                        <option value="custom">Image (enter URL below)</option>
-                        <option value="microbit">Micro:bit (enter URL below)</option>
-                        <option value="code">Example Code (edit in the pane)</option>
+                            <option value="random">Sorteado</option>
+                            <option value="custom">Imagem (digite a URL abaixo)</option>
+                            <option value="microbit">Micro:bit (digite a URL abaixo)</option>
+                            <option value="code">Código exemplo (digite no quadrinho)</option>
                         </optgroup>
                         <optgroup label="Preset Backgrounds">
                         <option value="arm1_chip.gif">ARM1 Chip</option>
@@ -127,7 +127,7 @@
                         </optgroup>
                     </select></p>
                     <p><input id="form-image-url" type="text" class="custom-image" disabled="disabled" data-step="6" data-intro="Add the URL to your custom image here." data-position="top"/><a href="/microbit.html" class="mb-link" target="_blank">micro:bit-o-matic</a></p>
-                    <p><label for="form-snakes">Snakes:</label>
+                    <p><label for="form-snakes">Cobrinhas:</label>
                     <select id="form-snakes" data-step="7"
                     data-intro="The comic features two characters, the yellow and blue Python snakes. Use this to control who gets displayed." data-position="top">
                         <option value="none">Nenhuma</option>
@@ -136,14 +136,14 @@
                         <option value="blue">Azul</option>
                     </select></p>
                     <p data-step="8"
-                      data-intro="Toggle speech bubbles, then click to edit."
+                      data-intro="Selecione os balões de fala, e então clique neles para editar."
                       data-position="top">
                     <label for="form-tl">Balões de fala:</label><br/>
-                    <input type="checkbox" value="lt" id="form-lt">Top Left</input>
-                    <input type="checkbox" value="rt" id="form-rt">Top Right</input><br/>
-                    <input type="checkbox" value="lb" id="form-lb">Bottom Left</input>
-                    <input type="checkbox" value="rb" id="form-rb">Bottom Right</input></p>
-                    <p><button type="reset" id="reset-button">Reset</button></p>
+                    <input type="checkbox" value="lt" id="form-lt">Superior Esquerdo</input>
+                    <input type="checkbox" value="rt" id="form-rt">Superior Direito</input><br/>
+                    <input type="checkbox" value="lb" id="form-lb">Inferior Esquerdo</input>
+                    <input type="checkbox" value="rb" id="form-rb">Inferior Direito</input></p>
+                    <p><button type="reset" id="reset-button">Reiniciar</button></p>
                 </form>
             </div>
             <div class="frame" id="frame2">
@@ -171,12 +171,12 @@
                     <input id="form-heading" type="checkbox"/></p>
                     <p><label for="form-background">Fundo:</label>
                     <select id="form-background">
-                        <option value="none">Nenhuma</option>
+                        <option value="none">Nenhum</option>
                         <optgroup label="Custom Backgrounds">
-                        <option value="random">Sorteado</option>
-                        <option value="custom">Image (enter URL below)</option>
-                        <option value="microbit">Micro:bit (enter URL below)</option>
-                        <option value="code">Example Code (edit in the pane)</option>
+                            <option value="random">Sorteado</option>
+                            <option value="custom">Imagem (digite a URL abaixo)</option>
+                            <option value="microbit">Micro:bit (digite a URL abaixo)</option>
+                            <option value="code">Código exemplo (digite no quadrinho)</option>
                         </optgroup>
                         <optgroup label="Preset Backgrounds">
                         <option value="arm1_chip.gif">ARM1 Chip</option>
@@ -247,7 +247,7 @@
                         </optgroup>
                     </select></p>
                     <p><input id="form-image-url" type="text" class="custom-image" disabled="disabled"/><a href="/microbit.html" class="mb-link" target="_blank">micro:bit-o-matic</a></p>
-                    <p><label for="form-snakes">Snakes:</label>
+                    <p><label for="form-snakes">Cobrinhas:</label>
                     <select id="form-snakes">
                         <option value="none">Nenhuma</option>
                         <option value="both">Ambas</option>
@@ -255,11 +255,11 @@
                         <option value="blue">Azul</option>
                     </select></p>
                     <p><label for="form-tl">Balões de fala:</label><br/>
-                    <input type="checkbox" value="lt" id="form-lt">Top Left</input>
-                    <input type="checkbox" value="rt" id="form-rt">Top Right</input><br/>
-                    <input type="checkbox" value="lb" id="form-lb">Bottom Left</input>
-                    <input type="checkbox" value="rb" id="form-rb">Bottom Right</input></p>
-                    <p><button type="reset" id="reset-button">Reset</button></p>
+                    <input type="checkbox" value="lt" id="form-lt">Superior Esquerdo</input>
+                    <input type="checkbox" value="rt" id="form-rt">Superior Direito</input><br/>
+                    <input type="checkbox" value="lb" id="form-lb">Inferior Esquerdo</input>
+                    <input type="checkbox" value="rb" id="form-rb">Inferior Direito</input></p>
+                    <p><button type="reset" id="reset-button">Reiniciar</button></p>
                 </form>
             </div>
 
@@ -284,7 +284,7 @@
                     </div>
                 </section>
                 <form id="form3">
-                    <p><label for="form-heading">Cabe&ccedil;alho:</label>
+                    <p><label for="form-heading">Cabeçalho:</label>
                     <input id="form-heading" type="checkbox"/></p>
                     <p><label for="form-background">Fundo:</label>
                     <select id="form-background">
@@ -366,23 +366,23 @@
                     <p><input id="form-image-url" type="text" class="custom-image" disabled="disabled"/><a href="/microbit.html" class="mb-link" target="_blank">micro:bit-o-matic</a></p>
                     <p><label for="form-snakes">Cobrinhas:</label>
                     <select id="form-snakes">
-                        <option value="none">Nenhum</option>
+                        <option value="none">Nenhuma</option>
                         <option value="both">Ambas</option>
                         <option value="yellow">Amarela</option>
                         <option value="blue">Azul</option>
                     </select></p>
-                    <p><label for="form-tl">Bal&otilde;es de fala:</label><br/>
-                    <input type="checkbox" value="lt" id="form-lt">Superior Esquerda</input>
-                    <input type="checkbox" value="rt" id="form-rt">Superior Direita</input><br/>
-                    <input type="checkbox" value="lb" id="form-lb">Inferior Esquerda</input>
-                    <input type="checkbox" value="rb" id="form-rb">Inferior Direita</input></p>
-                    <p><button type="reset" id="reset-button">Reset</button></p>
+                    <p><label for="form-tl">Balões de fala:</label><br/>
+                    <input type="checkbox" value="lt" id="form-lt">Superior Esquerdo</input>
+                    <input type="checkbox" value="rt" id="form-rt">Superior Direito</input><br/>
+                    <input type="checkbox" value="lb" id="form-lb">Inferior Esquerdo</input>
+                    <input type="checkbox" value="rb" id="form-rb">Inferior Direito</input></p>
+                    <p><button type="reset" id="reset-button">Reiniciar</button></p>
                 </form>
             </div>
         </article>
         <footer class="smallprint">
-            <p>Generated by Python Comics.
-            <a href="http://pycomic.github.io/" id="home-link">MAKE YOUR OWN</a>
+            <p>Gerado com Python Comics traduzido para o português.
+            <a href="http://webtiras.github.io/pycomic" id="home-link">FAÇA VOCÊ TAMBÉM UMA TIRINHA</a>
             </p>
         </footer>
     </main>
