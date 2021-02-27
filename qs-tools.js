@@ -38,8 +38,7 @@ function set_qs(settings) {
     $('#direct-link').text("link para esta tirinha"); 
  	
 	// tou desligando a parte do twitter que está dando problema
-	/*  
-    $('#twitter-button').html('<a href="https://twitter.com/share?		ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Confira esta tirinha sobre Python..!"data-hashtags="pycomic" data-show-count="false">Tweet</a>< async src="https://platform.twitter.com/widgets.js" charset="utf-8"></>');
+    $('#twitter-button').html('<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Confira esta tirinha sobre Python..!"data-hashtags="pycomic" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
     twttr.widgets.load();
-    */
+
 }

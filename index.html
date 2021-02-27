@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="introjs.min.css"/>
         <script src="jquery-2.1.4.min.js"></script>
-        <script src="qs-tools.js"></script>
-        <script src="comic.js"></script>
+
+        <script src="qs-tools.js"></script>      
+        <script src="comic.js"></script>        
     </head>
     <body>
     <main class="comic">
@@ -16,10 +17,8 @@
             <h2 id="author" data-step="2" data-intro="O mesmo para o nome da autora!">Autora anônima</h2>
             <span id="editor-help"><button onclick="javascript:introJs().start();">Ajuda</button><button id="direct-button" data-step="9"
             data-intro="No final, clique aqui para pegar a URL da sua tirinha. Compartilhe!">Pegar link direto</button> <a href="#" id="direct-link"></a></span>
-            <!-- removing twitter-button
- <span id="twitter-button"></span>
+            <span id="twitter-button"></span>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
--->
         </header>
 
         <article class="strip">
@@ -392,4 +391,5 @@
     <script>window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, "script", "twitter-wjs"));</script>
     </body>
+    
 </html>
