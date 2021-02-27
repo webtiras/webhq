@@ -34,7 +34,12 @@ function set_qs(settings) {
     var new_url = old_url[0] + '?' + qs_array.join('&');
 
     $('#direct-link').attr('href', new_url);
-    $('#direct-link').text("link para esta tirinha"); // era data antes, pode ser new_url também
-    $('#twitter-button').html('<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Confira esta tirinha sobre Python..!"data-hashtags="pycomic" data-show-count="false">Tweet</a>< async src="https://platform.twitter.com/widgets.js" charset="utf-8"></>');
+	// era data antes, poderia ser new_url também (mas acho que não cabe)
+    $('#direct-link').text("link para esta tirinha"); 
+ 	
+	// tou desligando a parte do twitter que está dando problema
+	/*  
+    $('#twitter-button').html('<a href="https://twitter.com/share?		ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Confira esta tirinha sobre Python..!"data-hashtags="pycomic" data-show-count="false">Tweet</a>< async src="https://platform.twitter.com/widgets.js" charset="utf-8"></>');
     twttr.widgets.load();
+    */
 }
