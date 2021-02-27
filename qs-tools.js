@@ -21,7 +21,8 @@ function get_qs_value(key) {
     }
 }
 
-// Versão de setae o link direto (sem TinyURL) feita pelo Carlos Vamoss
+// Given a settings object of key/value pairs, will update the query string
+// element of the URL accordingly.
 function set_qs(settings) {
     var qs_array = [];
     var keys = Object.keys(settings);
@@ -33,8 +34,14 @@ function set_qs(settings) {
     var old_url = window.location.href.split('?');
     var new_url = old_url[0] + '?' + qs_array.join('&');
 
-    $('#direct-link').attr('href', new_url);
-    $('#direct-link').text(data);
-    $('#twitter-button').html('<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Confira esta tirinha sobre Python..!"data-hashtags="pycomic" data-show-count="false">Tweet</a>< async src="https://platform.twitter.com/widgets.js" charset="utf-8"></>');
-    twttr.widgets.load();
+    $.ajax({
+      url: "https://tinyurl.com/api-create.php?url=" + new_url,
+      type: "get",
+    }).done(function( data ) {
+            console.log(data);
+            $('#direct-link').attr('href', data);
+            $('#direct-link').text(data);
+            $('#twitter-button').html('<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Confira esta tirinha sobre Python..!"data-hashtags="pycomic" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+            twttr.widgets.load();
+    });
 }
