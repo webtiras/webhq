@@ -10,7 +10,7 @@ Quê?
 Baseado no lindo trabalho de http://ntoll.org e colegas, que fizeram essa ferramenta
 para uso educacional em um projeto que envolvia a Python Software Foundation e o projeto
 BBC micro:bit. Projeto original em http://github.com/pycomic/pycomic.github.io e pode ser
-usado visitando htpp//pycomic.github.io
+usado visitando http://pycomic.github.io
 
 Veja uma das fontes de inspiração do projeto: 
 https://timstout.wordpress.com/2011/09/03/how-to-use-3-act-story-structure-in-comic-strips/
