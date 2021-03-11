@@ -1,8 +1,7 @@
-PyComic
+WebHQ
 =======
 
-Um site estático para gerar tirinhas sobre Python.
-*A static website for generating Pythonic comics.*
+Um site estático para gerar tirinhas baseado no PyComic.
 
 Quê?
 -----
@@ -20,8 +19,6 @@ https://timstout.wordpress.com/2011/09/03/how-to-use-3-act-story-structure-in-co
    We want our resources to appeal to the 11yo target age group and so those with
    more of an affinity with visual rather than verbal instructions are catered
    for, we've decided to create some of our resources as comics.
-
-As tirinhas apresentam as cobrinhas do Python "Amarela" e "Azul"..! 
 
 Como?
 ----
