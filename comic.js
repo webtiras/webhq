@@ -109,27 +109,27 @@ function update_scene(context) {
     if(context.s1) {
         if(context.s1==='both') {
             $('#pane1').addClass('left-python-yellow right-python-blue');
-        } else if(context.s1==='yellow') {
+        } else if(context.s1==='coelho') {
             $('#pane1').addClass('left-python-yellow');
-        } else if(context.s1==='blue') {
+        } else if(context.s1==='lobo') {
             $('#pane1').addClass('right-python-blue');
         }
     }
     if(context.s2) {
         if(context.s2==='both') {
             $('#pane2').addClass('left-python-yellow right-python-blue');
-        } else if(context.s2==='yellow') {
+        } else if(context.s2==='coelho') {
             $('#pane2').addClass('left-python-yellow');
-        } else if(context.s2==='blue') {
+        } else if(context.s2==='lobo') {
             $('#pane2').addClass('right-python-blue');
         }
     }
     if(context.s3) {
         if(context.s3==='both') {
             $('#pane3').addClass('left-python-yellow right-python-blue');
-        } else if(context.s3==='yellow') {
+        } else if(context.s3==='coelho') {
             $('#pane3').addClass('left-python-yellow');
-        } else if(context.s3==='blue') {
+        } else if(context.s3==='lobo') {
             $('#pane3').addClass('right-python-blue');
         }
     }
@@ -366,9 +366,9 @@ function setup_editor() {
             pane.removeClass();
             if(snakes==='both') {
                 pane.addClass('left-python-yellow right-python-blue');
-            } else if(snakes==='yellow') {
+            } else if(snakes==='coelho') {
                 pane.addClass('left-python-yellow');
-            } else if(snakes==='blue') {
+            } else if(snakes==='lobo') {
                 pane.addClass('right-python-blue');
             }
         });
